@@ -2,8 +2,11 @@ import { Link } from 'react-router-dom';
 import { styled } from 'styled-components';
 import logo from '../assets/logo-mob.svg';
 import toggleBtn from '../assets/icons/toggle-btn.svg';
+import { useGlobalContext } from '../context';
 
 const Navbar = () => {
+  const { isSidebarOpen, openSidebar } = useGlobalContext();
+
   return (
     <Wrapper>
       <div className="nav-center">
@@ -11,7 +14,7 @@ const Navbar = () => {
           <Link to="/">
             <img src={logo} alt="" />
           </Link>
-          <button className="nav-toggle">
+          <button className="nav-toggle" onClick={openSidebar}>
             <img src={toggleBtn} alt="" />
           </button>
         </div>

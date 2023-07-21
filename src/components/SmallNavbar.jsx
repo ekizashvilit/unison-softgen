@@ -69,6 +69,10 @@ const Wrapper = styled.nav`
       border: none;
       color: #d0d0d0;
       font-size: 15px;
+      cursor: pointer;
+    }
+    li button:hover {
+      color: #006a9f;
     }
   }
 
@@ -121,7 +125,6 @@ const Wrapper = styled.nav`
     top: 34px;
     background-color: #ee303c;
     min-width: 370px;
-    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
     z-index: 1;
     padding: 0.5rem 0;
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
