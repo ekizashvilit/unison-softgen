@@ -7,6 +7,7 @@ import SosModal from './SosModal';
 import SmallSidebar from './SmallSidebar';
 import SidebarInfo from './SidebarInfo';
 import SidebarFooter from './SidebarFooter';
+import Hero from './Hero';
 
 export {
   Navbar,
@@ -18,4 +19,5 @@ export {
   SmallSidebar,
   SidebarInfo,
   SidebarFooter,
+  Hero,
 };

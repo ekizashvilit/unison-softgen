@@ -4,12 +4,14 @@ import telephone from '../assets/icons/telephone.svg';
 const SidebarInfo = () => {
   return (
     <Wrapper>
-      <button className="agent-btn">
-        <img src={telephone} alt="" />
-        <div>
-          აგენტთან <br /> დაკავშირება
-        </div>
-      </button>
+      <div className="wrapper-div">
+        <button className="agent-btn">
+          <img src={telephone} alt="" />
+          <div>
+            აგენტთან <br /> დაკავშირება
+          </div>
+        </button>
+      </div>
       <div className="main-div">
         <div>ჩვენს შესახებ</div>
         <div>სიახლეები</div>
@@ -21,8 +23,14 @@ const SidebarInfo = () => {
 };
 
 const Wrapper = styled.section`
+  .wrapper-div {
+    display: flex;
+    justify-content: center;
+  }
+
   .agent-btn {
     width: 100%;
+    max-width: 25rem;
     border-radius: 12px;
     border: none;
     background: none;
