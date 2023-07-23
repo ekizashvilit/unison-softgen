@@ -6,12 +6,22 @@ import airplane from '../assets/icons/airplane.svg';
 import car from '../assets/icons/car.svg';
 import cross from '../assets/icons/cross.svg';
 import person from '../assets/icons/person-2.svg';
+
 import blueHouse from '../assets/icons/blue-house.svg';
 import blueCross from '../assets/icons/blue-cross.svg';
 import blueCar from '../assets/icons/blue-car.svg';
 import bluePerson from '../assets/icons/blue-person.svg';
 import blueAirplane from '../assets/icons/blue-airplane.svg';
 import redCart from '../assets/icons/red-cart.svg';
+
+import satUsers from '../assets/icons/sat-users.svg';
+import offices from '../assets/icons/offices.svg';
+import money from '../assets/icons/money.svg';
+import date from '../assets/icons/date.svg';
+
+import foodPic from '../assets/food-mob.png';
+import housePic from '../assets/house-mob.png';
+import carPic from '../assets/car-mob.png';
 
 export const links = [
   {
@@ -98,5 +108,46 @@ export const mainContent = [
   {
     icon: redCart,
     text: 'შეიძინე ონლაინ',
+  },
+];
+
+export const advantages = [
+  {
+    icon: satUsers,
+    number: 32067,
+    text: 'კმაყოფილი მომხმარებელი',
+  },
+  {
+    icon: offices,
+    number: 5,
+    text: 'ფილიალი საქართველოში',
+  },
+  {
+    icon: money,
+    number: `2’800’843 ₾`,
+    text: 'ანაზღაურებული თანხა',
+  },
+  {
+    icon: date,
+    number: 12,
+    text: 'წარმატებული წელი',
+  },
+];
+
+export const sliderItems = [
+  {
+    img: housePic,
+    title: 'ქალაქგარეთ ცხოვრების 10 გავრცელებული მითი',
+    date: '6 ნოემბერი',
+  },
+  {
+    img: foodPic,
+    title: 'ჯანსაღი კვების საიდუმლო სამხრეთ აზიიდან',
+    date: '28 ოქტომბერი',
+  },
+  {
+    img: carPic,
+    title: 'ავტომობილის სალონის მოვლის თანამედროვე ხერხები',
+    date: '14 ოქტომბერი',
   },
 ];

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53">
+  <g id="payments_black_24dp" transform="translate(0.108 -0.14)">
+    <rect id="Rectangle_23" data-name="Rectangle 23" width="53" height="53" transform="translate(-0.108 0.14)" fill="none"/>
+    <path id="Path_45" data-name="Path 45" d="M40.578,25.988V8.4a4.411,4.411,0,0,0-4.4-4.4H5.4A4.411,4.411,0,0,0,1,8.4v17.59a4.411,4.411,0,0,0,4.4,4.4H36.181A4.411,4.411,0,0,0,40.578,25.988Zm-4.4,0H5.4V8.4H36.181ZM20.789,10.6a6.6,6.6,0,1,0,6.6,6.6A6.588,6.588,0,0,0,20.789,10.6Zm28.584,0V34.783a4.411,4.411,0,0,1-4.4,4.4H7.6v-4.4H44.976V10.6Z" transform="translate(1.199 4.795)" fill="#006a9f"/>
+  </g>
+</svg>

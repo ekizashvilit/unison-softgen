@@ -13,7 +13,12 @@ const SidebarMain = () => {
       <div className="wrapper-div">
         <div className="icons">
           <img src={logo} alt="unison logo" />
-          <img src={closeBtn} alt="" onClick={closeSidebar} />
+          <img
+            src={closeBtn}
+            alt=""
+            onClick={closeSidebar}
+            className="close-btn"
+          />
         </div>
         <div className="hero">
           <div className="my-cab">
@@ -39,6 +44,10 @@ const Wrapper = styled.section`
     display: flex;
     flex-direction: column;
     gap: 3rem;
+  }
+
+  .close-btn {
+    cursor: pointer;
   }
 
   .icons {

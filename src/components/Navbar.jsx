@@ -24,6 +24,7 @@ const Navbar = () => {
 };
 
 const Wrapper = styled.nav`
+  overflow-y: hidden;
   height: 7rem;
   display: flex;
   justify-content: center;

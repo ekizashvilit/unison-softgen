@@ -9,6 +9,9 @@ import SidebarInfo from './SidebarInfo';
 import SidebarFooter from './SidebarFooter';
 import Hero from './Hero';
 import MainContent from './MainContent';
+import Advantages from './Advantages';
+import Carousel from './Carousel';
+import Footer from './Footer';
 
 export {
   Navbar,
@@ -22,4 +25,7 @@ export {
   SidebarFooter,
   Hero,
   MainContent,
+  Advantages,
+  Carousel,
+  Footer,
 };

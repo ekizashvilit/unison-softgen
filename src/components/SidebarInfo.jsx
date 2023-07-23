@@ -43,6 +43,7 @@ const Wrapper = styled.section`
     text-align: left;
     gap: 0.5rem;
     margin-bottom: 2.5rem;
+    cursor: pointer;
   }
 
   .main-div {
@@ -52,6 +53,10 @@ const Wrapper = styled.section`
     gap: 20px;
     font-size: 1rem;
     font-weight: bold;
+  }
+
+  .main-div div {
+    cursor: pointer;
   }
 `;
 

@@ -34,6 +34,10 @@ const Wrapper = styled.section`
     gap: 1rem;
   }
 
+  .language-div div {
+    cursor: pointer;
+  }
+
   .num-div {
     display: flex;
     flex-direction: column;
