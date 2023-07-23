@@ -8,6 +8,7 @@ const Hero = () => {
     <Wrapper>
       <div className="image-container">
         <img src={bgPhoto} alt="" />
+        <div></div>
       </div>
       <p>
         ლორემ იპსუმ <br /> დოლორ სიტ ამეტ
@@ -29,10 +30,28 @@ const Hero = () => {
 const Wrapper = styled.div`
   position: relative;
 
+  .image-container {
+    position: relative;
+  }
+
+  .image-container div {
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    width: 100%;
+    height: 26%;
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.1) 2%,
+      rgba(0, 106, 159, 0.3) 56%
+    );
+  }
+
   .image-container img {
     width: 100%;
     min-height: 266px;
     object-fit: cover;
+    border-bottom: 3px solid #ee303c;
   }
 
   .img-container {
@@ -40,13 +59,8 @@ const Wrapper = styled.div`
     height: 68px;
     position: absolute;
     top: 73%;
-    background: radial-gradient(
-      circle,
-      rgba(255, 255, 255, 0.1) 2%,
-      rgba(0, 106, 159, 0.3) 56%
-    );
+
     z-index: 0;
-    border-bottom: 3px solid #ee303c;
   }
 
   .buy-now {

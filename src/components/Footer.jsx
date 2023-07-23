@@ -16,5 +16,14 @@ const Footer = () => {
   );
 };
 
-const Wrapper = styled.footer``;
+const Wrapper = styled.footer`
+  padding: 2rem;
+  font-family: Helvetica, sans-serif;
+  color: #707070;
+  font-size: 1rem;
+
+  p {
+    font-size: 14px;
+  }
+`;
 export default Footer;

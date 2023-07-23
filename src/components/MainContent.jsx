@@ -9,7 +9,7 @@ const MainContent = () => {
         {mainContent.map((item, index) => {
           return (
             <div key={index}>
-              <img src={item.icon} alt="" />
+              <img src={item.icon} alt={item.text} />
               {item.text}
             </div>
           );
@@ -66,6 +66,7 @@ const Wrapper = styled.div`
     font-size: 13px;
     color: #707070;
     padding: 0 1rem;
+    cursor: pointer;
   }
 
   .btn-container {

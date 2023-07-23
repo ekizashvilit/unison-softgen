@@ -63,6 +63,7 @@ const Wrapper = styled.section`
     width: 100%;
     max-width: 555px;
     margin: 0 2rem;
+    cursor: pointer;
   }
 
   .card-txt {

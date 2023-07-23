@@ -23,6 +23,11 @@ import foodPic from '../assets/food-mob.png';
 import housePic from '../assets/house-mob.png';
 import carPic from '../assets/car-mob.png';
 
+import fb from '../assets/icons/fb.png';
+import ig from '../assets/icons/ig.png';
+import yt from '../assets/icons/yt.png';
+import li from '../assets/icons/li.png';
+
 export const links = [
   {
     id: 1,
@@ -149,5 +154,24 @@ export const sliderItems = [
     img: carPic,
     title: 'ავტომობილის სალონის მოვლის თანამედროვე ხერხები',
     date: '14 ოქტომბერი',
+  },
+];
+
+export const footerSocials = [
+  {
+    icon: fb,
+    name: 'Facebook',
+  },
+  {
+    icon: ig,
+    name: 'Instagram',
+  },
+  {
+    icon: yt,
+    name: 'Youtube',
+  },
+  {
+    icon: li,
+    name: 'LinkedIn',
   },
 ];

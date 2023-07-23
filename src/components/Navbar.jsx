@@ -7,6 +7,8 @@ import { useGlobalContext } from '../context';
 const Navbar = () => {
   const { isSidebarOpen, openSidebar } = useGlobalContext();
 
+  document.body.style.overflow = isSidebarOpen ? 'hidden' : 'auto';
+
   return (
     <Wrapper>
       <div className="nav-center">
