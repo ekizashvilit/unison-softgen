@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="30" viewBox="0 0 31 30">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#58b0e3"/>
+      <stop offset="1" stop-color="#005287"/>
+    </linearGradient>
+  </defs>
+  <g id="health_and_safety_black_48dp" transform="translate(0.471 0.079)">
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="31" height="30" transform="translate(-0.471 -0.079)" fill="none"/>
+    <path id="Path_30" data-name="Path 30" d="M12.15,15.793H9.015V12.031H12.15V8.9h3.762v3.135h3.135v3.762H15.912v3.135H12.15ZM14.031,2,4,5.762V13.4c0,6.332,4.276,12.238,10.031,13.68,5.755-1.442,10.031-7.348,10.031-13.68V5.762Zm7.523,11.4c0,5.015-3.2,9.655-7.523,11.072C9.705,23.053,6.508,18.426,6.508,13.4V7.5l7.523-2.821L21.554,7.5Z" transform="translate(1.015 0.508)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

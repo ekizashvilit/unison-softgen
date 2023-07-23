@@ -1,6 +1,7 @@
 import { styled } from 'styled-components';
 import bgPhoto from '../assets/bg-photo.png';
 import buyNow from '../assets/buy-now-mob.png';
+import { BiCircle, BiSolidCircle } from 'react-icons/bi';
 
 const Hero = () => {
   return (
@@ -13,6 +14,13 @@ const Hero = () => {
       </p>
       <div className="img-container">
         <img src={buyNow} alt="" className="buy-now" />
+      </div>
+      <div className="circle-divs">
+        <BiSolidCircle />
+        <BiCircle />
+        <BiCircle />
+        <BiCircle />
+        <BiCircle />
       </div>
     </Wrapper>
   );
@@ -47,6 +55,7 @@ const Wrapper = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    cursor: pointer;
   }
 
   p {
@@ -60,6 +69,18 @@ const Wrapper = styled.div`
     text-align: center;
     width: 100%;
     font-family: 'PantonMtav3 Regular';
+  }
+
+  .circle-divs {
+    display: flex;
+    gap: 3px;
+    color: white;
+    position: absolute;
+    top: 80%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+    cursor: pointer;
   }
 `;
 

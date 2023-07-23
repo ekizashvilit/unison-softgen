@@ -1,0 +1,10 @@
+<svg id="how_to_reg_black_24dp" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30.093" height="30.093" viewBox="0 0 30.093 30.093">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#58b0e3"/>
+      <stop offset="1" stop-color="#005287"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_219" data-name="Path 219" d="M0,0H30.093V30.093H0Z" fill="none"/>
+  <path id="Path_220" data-name="Path 220" d="M13.031,14.031A5.015,5.015,0,1,0,8.015,9.015,5.014,5.014,0,0,0,13.031,14.031Zm0-7.523a2.508,2.508,0,1,1-2.508,2.508A2.515,2.515,0,0,1,13.031,6.508ZM5.508,21.554c.251-.79,3.222-2.107,6.219-2.433l2.558-2.508a11.712,11.712,0,0,0-1.254-.075C9.683,16.539,3,18.219,3,21.554v2.508H14.285l-2.508-2.508Zm19.56-6.9L18.636,21.14l-2.6-2.608L14.285,20.3l4.351,4.389,8.188-8.263Z" transform="translate(0.762 1.015)" fill="url(#linear-gradient)"/>
+</svg>
