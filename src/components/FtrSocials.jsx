@@ -10,6 +10,7 @@ const FtrSocials = () => {
         <img src={appStore} alt="" />
         <img src={googlePlay} alt="" />
       </div>
+      <h5>სოციალური ქსელები</h5>
       <div className="socials">
         {footerSocials.map((item, index) => {
           return (
@@ -50,6 +51,25 @@ const Wrapper = styled.div`
     align-items: center;
     gap: 1rem;
     cursor: pointer;
+  }
+
+  h5 {
+    display: none;
+  }
+
+  @media (min-width: 994px) {
+    .download {
+      display: none;
+    }
+
+    .socials {
+      display: flex;
+      flex-direction: column;
+    }
+
+    h5 {
+      display: block;
+    }
   }
 `;
 

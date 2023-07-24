@@ -10,11 +10,15 @@ const Hero = () => {
         <img src={bgPhoto} alt="" />
         <div></div>
       </div>
-      <p>
+      <p className="mobile-p">
         ლორემ იპსუმ <br /> დოლორ სიტ ამეტ
+      </p>
+      <p className="desk-p">
+        ქონების დაზღვევა <span>ყველაზე ხელსაყრელი პირობებით</span>
       </p>
       <div className="img-container">
         <img src={buyNow} alt="" className="buy-now" />
+        <img src="" alt="" />
       </div>
       <div className="circle-divs">
         <BiSolidCircle />
@@ -43,7 +47,7 @@ const Wrapper = styled.div`
     background: radial-gradient(
       circle,
       rgba(255, 255, 255, 0.1) 2%,
-      rgba(0, 106, 159, 0.3) 56%
+      rgba(0, 106, 159, 0.5) 56%
     );
   }
 
@@ -72,7 +76,7 @@ const Wrapper = styled.div`
     cursor: pointer;
   }
 
-  p {
+  .mobile-p {
     position: absolute;
     top: 29%;
     left: 50%;
@@ -85,6 +89,10 @@ const Wrapper = styled.div`
     font-family: 'PantonMtav3 Regular';
   }
 
+  .desk-p {
+    display: none;
+  }
+
   .circle-divs {
     display: flex;
     gap: 3px;
@@ -95,6 +103,42 @@ const Wrapper = styled.div`
     transform: translate(-50%, -50%);
     font-size: 10px;
     cursor: pointer;
+  }
+
+  @media (min-width: 994px) {
+    .mobile-p {
+      display: none;
+    }
+
+    .image-container div {
+      height: 100%;
+    }
+
+    .desk-p {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      color: white;
+      font-size: 27px;
+      text-align: center;
+      width: 100%;
+      font-family: 'PantonMtav3 Regular';
+      font-size: 48px;
+    }
+
+    .desk-p span {
+      font-family: 'FiraGo';
+      font-size: 22px;
+    }
+
+    .buy-now {
+      top: 105%;
+      width: 23rem;
+    }
   }
 `;
 

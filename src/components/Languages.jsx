@@ -90,7 +90,7 @@ const Wrapper = styled.div`
   }
 
   .dropdown-content-lg button:hover {
-    background-color: #006a9f;
+    cursor: pointer;
   }
 
   .dropbtn-lg:hover .icon {

@@ -1,5 +1,5 @@
 import { styled } from 'styled-components';
-import { advantages } from '../utils/constants';
+import { advantages, advantagesDesk } from '../utils/constants';
 
 const Advantages = () => {
   return (
@@ -14,6 +14,16 @@ const Advantages = () => {
                 <span>{item.number}</span>
               </div>
               <h4>{item.text}</h4>
+            </div>
+          );
+        })}
+      </div>
+      <div className="adv-containers-desk">
+        {advantagesDesk.map((item, index) => {
+          return (
+            <div key={index}>
+              <img src={item.icon} alt="" />
+              <span>{item.txt}</span>
             </div>
           );
         })}
@@ -45,6 +55,10 @@ const Wrapper = styled.section`
     font-family: Arial, Helvetica, sans-serif;
   }
 
+  .adv-containers-desk {
+    display: none;
+  }
+
   .adv-container div {
     display: flex;
     flex-direction: column;
@@ -72,6 +86,50 @@ const Wrapper = styled.section`
   .underline {
     width: 112px;
     border-bottom: 1px solid #707070;
+  }
+
+  @media (min-width: 994px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15rem;
+
+    .adv-containers {
+      display: none;
+    }
+
+    .adv-containers-desk {
+      /* margin: 3rem 3rem; */
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .adv-containers-desk div {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 2rem 0;
+    }
+
+    .adv-containers-desk div:hover {
+      background: white;
+      cursor: pointer;
+      border-radius: 12px;
+    }
+
+    .adv-containers-desk div img {
+      max-height: 48px;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: normal;
+    }
+
+    .underline-div {
+      display: none;
+    }
   }
 `;
 

@@ -10,6 +10,7 @@ const FtrInfo = () => {
         <div>საინფორმაციო ფურცელი</div>
         <div>სამედიცინო პროვაიდერები</div>
       </div>
+      <p>უნისონი © ყველა უფლება დაცულია, 2021</p>
     </Wrapper>
   );
 };
@@ -31,6 +32,22 @@ const Wrapper = styled.div`
 
   .info-container div {
     line-height: normal;
+  }
+
+  p {
+    display: none;
+  }
+
+  @media (min-width: 994px) {
+    .info-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    p {
+      display: block !important;
+      margin-top: 2rem;
+    }
   }
 `;
 

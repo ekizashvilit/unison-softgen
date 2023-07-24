@@ -97,7 +97,7 @@ const Wrapper = styled.div`
     z-index: 999;
   }
 
-  @media (min-width: 1124px) {
+  @media (min-width: 994px) {
     .sm-sidebar {
       display: none;
     }

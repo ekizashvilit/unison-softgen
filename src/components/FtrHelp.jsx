@@ -4,7 +4,7 @@ const FtrHelp = () => {
   return (
     <Wrapper>
       <h3>დახმარება</h3>
-      <div className="info-container">
+      <div className="container">
         <div>კონტაქტი</div>
         <div>მონაცემთა დაცვა</div>
         <div>მომხმარებლის ხმა</div>
@@ -21,7 +21,7 @@ const Wrapper = styled.div`
     font-size: 16px;
   }
 
-  .info-container {
+  .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -31,6 +31,13 @@ const Wrapper = styled.div`
 
   .info-container div {
     line-height: normal;
+  }
+
+  @media (min-width: 994px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
   }
 `;
 

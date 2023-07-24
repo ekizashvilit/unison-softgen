@@ -4,15 +4,36 @@ import Slider from 'react-slick';
 import { sliderItems } from '../utils/constants';
 import { styled } from 'styled-components';
 import { BsChevronRight } from 'react-icons/bs';
+import { useEffect, useState } from 'react';
 
 const Carousel = () => {
+  const [slidesToShow, setSlidesToShow] = useState(1);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 994) {
+        setSlidesToShow(3);
+      } else {
+        setSlidesToShow(1);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
-    // centerMode: true,
+    centerMode: true,
     focusOnSelect: true,
   };
 
@@ -99,6 +120,20 @@ const Wrapper = styled.section`
     justify-content: center;
     margin-top: 4rem;
     cursor: pointer;
+  }
+
+  @media (min-width: 994px) {
+    h2 {
+      font-weight: normal;
+    }
+
+    .card {
+      min-height: 331px;
+    }
+
+    .card:hover {
+      border: 2px solid #006a9f;
+    }
   }
 `;
 export default Carousel;

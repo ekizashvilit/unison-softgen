@@ -92,6 +92,53 @@ const Wrapper = styled.div`
     border-bottom: 1px solid #707070;
     margin-top: 2rem;
   }
+
+  @media (min-width: 994px) {
+    background-image: none;
+    background-color: #f8f8f8;
+    min-height: 12rem;
+
+    .content {
+      display: flex;
+      top: 18%;
+      font-family: 'PantonMtav3 Regular';
+      height: 180px;
+      justify-content: center;
+    }
+
+    .content div:last-child {
+      display: none;
+    }
+
+    .content div {
+      height: 100%;
+      max-width: 260px;
+      font-size: 1.5rem;
+    }
+
+    .content div img {
+      height: 40px;
+    }
+
+    .btn-container {
+      display: none;
+    }
+
+    .content div:hover {
+      color: #006a9f;
+    }
+  }
+
+  @media (min-width: 994px) and (max-width: 1500px) {
+    .content {
+      height: 113px !important;
+      width: 100% !important;
+    }
+
+    .content div {
+      font-size: 1rem;
+    }
+  }
 `;
 
 export default MainContent;

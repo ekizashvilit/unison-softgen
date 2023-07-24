@@ -28,6 +28,13 @@ import ig from '../assets/icons/ig.png';
 import yt from '../assets/icons/yt.png';
 import li from '../assets/icons/li.png';
 
+import deskPerson from '../assets/icons/desk-person.svg';
+import deskStars from '../assets/icons/desk-stars.svg';
+import deskPeople from '../assets/icons/desk-people.svg';
+import stopwatch from '../assets/icons/stopwatch.svg';
+import touch from '../assets/icons/touch.svg';
+import star from '../assets/icons/star.svg';
+
 export const links = [
   {
     id: 1,
@@ -173,5 +180,32 @@ export const footerSocials = [
   {
     icon: li,
     name: 'LinkedIn',
+  },
+];
+
+export const advantagesDesk = [
+  {
+    icon: deskPerson,
+    txt: 'მომხმარებლის კმაყოფილების 96%-იანი დონე',
+  },
+  {
+    icon: star,
+    txt: 'მაღალრეიტინგული გადამზღვევი კომპანიები',
+  },
+  {
+    icon: touch,
+    txt: 'თანამედროვე ელექტრონული სერვისები',
+  },
+  {
+    icon: stopwatch,
+    txt: 'ზარალის დარეგულირების უმოკლესი ვადები',
+  },
+  {
+    icon: deskPeople,
+    txt: 'კორპორატიული კლიენტების ფართო სპექტრი',
+  },
+  {
+    icon: deskStars,
+    txt: 'გუნდის პროფესიონალიზმი და მრავალწლიანი გამოცდილება',
   },
 ];

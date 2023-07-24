@@ -71,6 +71,7 @@ const Wrapper = styled.nav`
       font-size: 15px;
       cursor: pointer;
     }
+
     li button:hover {
       color: #006a9f;
     }
@@ -147,9 +148,19 @@ const Wrapper = styled.nav`
     visibility: visible;
   }
 
-  @media (min-width: 1124px) {
+  @media (min-width: 994px) {
     display: flex;
     min-height: 3.5rem;
+  }
+
+  @media (min-width: 994px) and (max-width: 1134px) {
+    li button {
+      font-size: 12px !important ;
+    }
+
+    .pages {
+      margin-right: 1rem !important;
+    }
   }
 `;
 
