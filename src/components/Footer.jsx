@@ -1,8 +1,8 @@
 import { styled } from 'styled-components';
-import FtrHero from './ftrHero';
-import FtrInfo from './ftrInfo';
-import FtrHelp from './ftrHelp';
-import FtrSocials from './ftrSocials';
+import FtrHero from './FtrHero';
+import FtrInfo from './FtrInfo';
+import FtrHelp from './FtrHelp';
+import FtrSocials from './FtrSocials';
 
 const Footer = () => {
   return (
